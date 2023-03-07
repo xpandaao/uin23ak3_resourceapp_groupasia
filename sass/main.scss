@@ -1,0 +1,14 @@
+@import "colors";
+@import "utilities";
+@import "mixins";
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html, body {
+  margin: 0;
+  background-color: hslac($background, 1);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
