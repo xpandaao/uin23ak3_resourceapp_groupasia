@@ -1,3 +1,3 @@
-export default function button({cat}){
-    return <button>{cat}</button>
+export function Button({cat}){
+    return <button className="category-button">{cat}</button>
 }

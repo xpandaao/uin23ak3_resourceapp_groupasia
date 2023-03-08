@@ -1,10 +1,10 @@
-export default function mainContent(){
+export function MainContent(){
     return(
-        <section>
-            <h2>Kategori</h2>
-            <p>Her skal det beskrives et par ting</p>
-            <ul>
-                <li><a href="#">Link navn</a></li>
+        <section className="content-section">
+            <h2 className="content-section-title">Kategori</h2>
+            <p className="content-section-text">Her skal det beskrives et par ting</p>
+            <ul className="content-section-list">
+                <li className="content-section-list-item"><a class="content-section-list-link" href="#">Link navn</a></li>
             </ul>
         </section>
     )

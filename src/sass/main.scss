@@ -14,31 +14,33 @@ html, body {
   box-sizing: border-box;
   font-family: $font;
   color: hslac($grey, 1);
+  @include flex-center();
 }
 
-header {
-  border: 1px solid $translusentgrey;
+.page-header {
+  border: 1px solid hslac($grey, .5);
   width: 100%;
   max-width: $maxwidth;
-  h2 {
+  &-title {
     text-transform: uppercase;
     text-align: left;
     font-size: $fontsize;
-    text-size-adjust: bold;
+    font-weight: bold;
     padding: 1rem 2rem;
   }
 }
 
-div {
+.App {
   width: 100%;
   max-width: $maxwidth;
   padding-top: 3rem;
   margin: 0 auto;
   text-align: left;
+
 }
 
 .active {
-  color: hslac(white, 1);
+  color: white;
   background-color: hslac($lightblue, 1);
   border-color: hslac($lightblue, 1);
   &:hover {
@@ -47,48 +49,48 @@ div {
   }
 }
 
-button {
+.category-button {
   @include flex-left;
   font-family: $font;
   text-transform: uppercase;
-  font-size: 20px;
-  color: $grey;
-  background-color: $lightgrey;
+  font-size: $fontsize;
+  color: hslac($grey, 1);
+  background-color: hslac($lightgrey, 1);
   padding: 1rem;
-  border-radius: 0%;
-  border-left: 1px solid $translusentgrey;
-  border-right: 1px solid $translusentgrey;
-  border-top: 1px solid $translusentgrey;
-  border-bottom: 1px solid $lightblue;
+  border-radius: 0;
+  border-left: 1px solid hslac($grey, .5);
+  border-right: 1px solid hslac($grey, .5);
+  border-top: 1px solid hslac($grey, .5);
+  border-bottom: 1px solid hslac($lightblue, 1);
   margin-top: 2rem;
-  margin-right: 5px;
+  margin-right: .313rem;
   transition: ease-in-out .3s;
   &:hover {
     color: hslac($lightblue, 1);
-    border-bottom: 1px solid $grey;
+    border-bottom: 1px solid hslac($grey, 1);
   }
 }
 
-section {
+.content-section {
   width: 100%;
   max-width: $maxwidth;
-  border-left: 1px solid $translusentgrey;
-  border-right: 1px solid $translusentgrey;
-  border-top: 5px solid $lightblue;
-  border-bottom: 1px solid $translusentgrey;
-  h2{
+  border-left: 1px solid hslac($grey, .5);
+  border-right: 1px solid hslac($grey, .5);
+  border-top: 5px solid hslac($lightblue, 1);
+  border-bottom: 1px solid hslac($grey, .5);
+  &-title {
     padding-left: 2rem;
     text-transform: uppercase;
   }
-  p{
+  &-text {
     padding-left: 2rem;
   }
-  ul{
+  &-list {
     padding-left: 3rem;
-    a{
+    &-link {
       color: hslac($lightblue, 1);
       transition: ease-in-out .2s;
-      &:hover{
+      &:hover {
         color: hslac($grey, 1);
         text-decoration: none;
       }

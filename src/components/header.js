@@ -1,7 +1,7 @@
-export default function header({title}){
+export function Header({title}){
     return(
-        <header>
-            <h1>{title}</h1>
+        <header className="page-header">
+            <h1 className="page-header-title">{title}</h1>
         </header>
     )
 }

@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import './components/header.js'
-import './components/button.js'
-import './components/mainContent.js'
+import { Header } from'./components/header.js'
+import { Button } from'./components/button.js'
+import { MainContent } from'./components/mainContent.js'
 import './resources.js'
 
 function App() {
   return (
     <div className="App">
-      <header />
-      <button />
-      <mainContent/>
+      <Header />
+      <Button />
+      <MainContent />
     </div>
   );
 }
