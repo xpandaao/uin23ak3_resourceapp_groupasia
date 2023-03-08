@@ -15,11 +15,33 @@ html, body {
   color: hsl(0, 0%, 50.1960784314%);
 }
 
+header {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  width: 100%;
+  max-width: 900px;
+}
+header h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-size-adjust: bold;
+  padding: 1rem 2rem;
+}
+
 div {
   width: 100%;
   max-width: 900px;
   padding-top: 3rem;
   margin: 0 auto;
+}
+
+.active {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(184.2253521127, 77.1739130435%, 63.9215686275%);
+  border-color: hsl(184.2253521127, 77.1739130435%, 63.9215686275%);
+}
+.active:hover {
+  color: hsl(0, 0%, 50.1960784314%);
+  border-color: hsl(184.2253521127, 77.1739130435%, 63.9215686275%);
 }
 
 button {
@@ -37,6 +59,10 @@ button {
   margin-top: 2rem;
   margin-right: 5px;
   transition: ease-in-out 0.3s;
+}
+button:hover {
+  color: hsl(184.2253521127, 77.1739130435%, 63.9215686275%);
+  border-bottom: 1px solid #808080;
 }
 
 section {

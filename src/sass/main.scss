@@ -16,11 +16,33 @@ html, body {
   color: hslac($grey, 1);
 }
 
+header {
+  border: 1px solid $translusentgrey;
+  width: 100%;
+  max-width: $maxwidth;
+  h2 {
+    text-transform: uppercase;
+    font-size: $fontsize;
+    text-size-adjust: bold;
+    padding: 1rem 2rem;
+  }
+}
+
 div {
   width: 100%;
   max-width: $maxwidth;
   padding-top: 3rem;
   margin: 0 auto;
+}
+
+.active {
+  color: hslac(white, 1);
+  background-color: hslac($lightblue, 1);
+  border-color: hslac($lightblue, 1);
+  &:hover {
+    color: hslac($grey, 1);
+    border-color: hslac($lightblue, 1);
+  }
 }
 
 button {
@@ -38,6 +60,10 @@ button {
   margin-top: 2rem;
   margin-right: 5px;
   transition: ease-in-out .3s;
+  &:hover {
+    color: hslac($lightblue, 1);
+    border-bottom: 1px solid $grey;
+  }
 }
 
 section {
@@ -59,10 +85,10 @@ section {
     a{
       color: hslac($lightblue, 1);
       transition: ease-in-out .2s;
-    }
-    a:hover{
-      color: hslac($grey, 1);
-      text-decoration: none;
+      &:hover{
+        color: hslac($grey, 1);
+        text-decoration: none;
+      }
     }
   }
 }
