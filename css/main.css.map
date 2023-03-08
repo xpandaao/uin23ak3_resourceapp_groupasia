@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/_mixins.scss","../sass/main.scss"],"names":[],"mappings":"AAAA;AA0BA;AAqCA;AC3DA;EACE;;;AAEF;EACE;EACA;EACA;EACA;EACA","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["../src/sass/_mixins.scss","../src/sass/main.scss"],"names":[],"mappings":"AAAA;AA0BA;AAqCA;AC3DA;EACE;;;AAEF;EACE;EACA;EACA;EACA;EACA;;;AAGF;EACE","file":"main.css"}

@@ -13,4 +13,8 @@ html, body {
   box-sizing: border-box;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvX21peGlucy5zY3NzIiwiLi4vc2Fzcy9tYWluLnNjc3MiLCJtYWluLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxZQUFBO0FBMEJBLFlBQUE7QUFxQ0EsYUFBQTtBQzNEQTtFQUNFLG1CQUFBO0FDQUY7O0FERUE7RUFDRSxTQUFBO0VBQ0Esb0NBQUE7RUFDQSxtQ0FBQTtFQUNBLHVCQUFBO0VBQ0Esc0JBQUE7QUNDRiIsImZpbGUiOiJtYWluLmNzcyJ9 */
+main {
+  background-color: hsl(351, 95%, 63%);
+}
+
+/*# sourceMappingURL=main.css.map */
