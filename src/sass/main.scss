@@ -23,6 +23,7 @@ html, body {
   max-width: $maxwidth;
   &-title {
     text-transform: uppercase;
+    text-align: left;
     font-size: $fontsize;
     font-weight: bold;
     padding: 1rem 2rem;
@@ -33,6 +34,9 @@ html, body {
   width: 100%;
   max-width: $maxwidth;
   padding-top: 3rem;
+  margin: 0 auto;
+  text-align: left;
+
 }
 
 .active {
@@ -46,6 +50,7 @@ html, body {
 }
 
 .category-button {
+  @include flex-left;
   font-family: $font;
   text-transform: uppercase;
   font-size: $fontsize;
