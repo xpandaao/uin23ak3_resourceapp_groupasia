@@ -2,6 +2,7 @@
 @import "utilities";
 @import "mixins";
 
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -11,4 +12,17 @@ html, body {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font: $font;
+}
+
+section {
+  width: 100%;
+  max-width: $maxwidth;
+  border-left: 1px solid $translusentgrey;
+  border-right: 1px solid $translusentgrey;
+  border-top: 5px solid $lightblue;
+  border-bottom: 1px solid $translusentgrey;
+  h2{
+    color: $primary;
+  }
 }
