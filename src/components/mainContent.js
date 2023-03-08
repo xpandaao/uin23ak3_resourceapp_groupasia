@@ -1,4 +1,4 @@
-export default function mainContent(){
+export function MainContent(){
     return(
         <section className="content-section">
             <h2 className="content-section-title">Kategori</h2>
