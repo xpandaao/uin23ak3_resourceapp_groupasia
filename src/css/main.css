@@ -6,29 +6,40 @@
 }
 
 html, body {
+  width: 100%;
   margin: 0;
   background-color: hsl(264, 24%, 96%);
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: hsl(0, 0%, 50.1960784314%);
+  color: hsl(0, 0%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header {
-  border: 1px solid rgba(128, 128, 128, 0.5);
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header {
+  border: 1px solid hsla(0, 0%, 50%, 0.5);
   width: 100%;
   max-width: 900px;
 }
-header h2 {
+.page-header-title {
   text-transform: uppercase;
   text-align: left;
-  font-size: 30px;
-  text-size-adjust: bold;
+  font-size: 1.875rem;
+  font-weight: bold;
   padding: 1rem 2rem;
 }
 
-div {
+.App {
   width: 100%;
   max-width: 900px;
   padding-top: 3rem;
@@ -37,63 +48,67 @@ div {
 }
 
 .active {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(184.2253521127, 77.1739130435%, 63.9215686275%);
-  border-color: hsl(184.2253521127, 77.1739130435%, 63.9215686275%);
+  color: white;
+  background-color: hsl(184, 77%, 64%);
+  border-color: hsl(184, 77%, 64%);
 }
 .active:hover {
-  color: hsl(0, 0%, 50.1960784314%);
-  border-color: hsl(184.2253521127, 77.1739130435%, 63.9215686275%);
+  color: hsl(0, 0%, 50%);
+  border-color: hsl(184, 77%, 64%);
 }
 
-button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  font-size: 20px;
-  color: #808080;
-  background-color: #f4f4f4;
-  padding: 1rem;
-  border-radius: 0%;
-  border-left: 1px solid rgba(128, 128, 128, 0.5);
-  border-right: 1px solid rgba(128, 128, 128, 0.5);
-  border-top: 1px solid rgba(128, 128, 128, 0.5);
-  border-bottom: 1px solid #5CE0EA;
-  margin-top: 2rem;
-  margin-right: 5px;
-  transition: ease-in-out 0.3s;
+.category-button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 0%, 96%);
+  padding: 1rem;
+  border-radius: 0;
+  border-left: 1px solid hsla(0, 0%, 50%, 0.5);
+  border-right: 1px solid hsla(0, 0%, 50%, 0.5);
+  border-top: 1px solid hsla(0, 0%, 50%, 0.5);
+  border-bottom: 1px solid hsl(184, 77%, 64%);
+  margin-top: 2rem;
+  margin-right: 0.313rem;
+  transition: ease-in-out 0.3s;
 }
-button:hover {
-  color: hsl(184.2253521127, 77.1739130435%, 63.9215686275%);
-  border-bottom: 1px solid #808080;
+.category-button:hover {
+  color: hsl(184, 77%, 64%);
+  border-bottom: 1px solid hsl(0, 0%, 50%);
 }
 
-section {
+.content-section {
   width: 100%;
   max-width: 900px;
-  border-left: 1px solid rgba(128, 128, 128, 0.5);
-  border-right: 1px solid rgba(128, 128, 128, 0.5);
-  border-top: 5px solid #5CE0EA;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  border-left: 1px solid hsla(0, 0%, 50%, 0.5);
+  border-right: 1px solid hsla(0, 0%, 50%, 0.5);
+  border-top: 5px solid hsl(184, 77%, 64%);
+  border-bottom: 1px solid hsla(0, 0%, 50%, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
-section h2 {
+.content-section-title {
   padding-left: 2rem;
   text-transform: uppercase;
 }
-section p {
+.content-section-text {
   padding-left: 2rem;
 }
-section ul {
+.content-section-list {
   padding-left: 3rem;
 }
-section ul a {
-  color: hsl(184.2253521127, 77.1739130435%, 63.9215686275%);
+.content-section-list-link {
+  color: hsl(184, 77%, 64%);
   transition: ease-in-out 0.2s;
 }
-section ul a:hover {
-  color: hsl(0, 0%, 50.1960784314%);
+.content-section-list-link:hover {
+  color: hsl(0, 0%, 50%);
   text-decoration: none;
 }
 
