@@ -7,6 +7,7 @@
   box-sizing: inherit;
 }
 html, body {
+  width: 100%;
   margin: 0;
   background-color: hslac($background, 1);
   -webkit-font-smoothing: antialiased;
@@ -15,6 +16,11 @@ html, body {
   font-family: $font;
   color: hslac($grey, 1);
   @include flex-center();
+}
+
+#root {
+  width: 100%;
+  @include flex-center;
 }
 
 .page-header {
@@ -78,6 +84,7 @@ html, body {
   border-right: 1px solid hslac($grey, .5);
   border-top: 5px solid hslac($lightblue, 1);
   border-bottom: 1px solid hslac($grey, .5);
+  @include flex-col-left;
   &-title {
     padding-left: 2rem;
     text-transform: uppercase;
