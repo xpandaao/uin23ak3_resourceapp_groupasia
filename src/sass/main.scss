@@ -22,6 +22,7 @@ header {
   max-width: $maxwidth;
   h2 {
     text-transform: uppercase;
+    text-align: left;
     font-size: $fontsize;
     text-size-adjust: bold;
     padding: 1rem 2rem;
@@ -33,6 +34,7 @@ div {
   max-width: $maxwidth;
   padding-top: 3rem;
   margin: 0 auto;
+  text-align: left;
 }
 
 .active {
@@ -46,6 +48,7 @@ div {
 }
 
 button {
+  @include flex-left;
   font-family: $font;
   text-transform: uppercase;
   font-size: 20px;
