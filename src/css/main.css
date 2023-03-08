@@ -1,4 +1,4 @@
-/* Flexbox */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"); /* Flexbox */
 /* Columns */
 /* Spacings */
 *, *::before, *::after {
@@ -13,4 +13,31 @@ html, body {
   box-sizing: border-box;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvX21peGlucy5zY3NzIiwiLi4vc2Fzcy9tYWluLnNjc3MiLCJtYWluLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxZQUFBO0FBMEJBLFlBQUE7QUFxQ0EsYUFBQTtBQzNEQTtFQUNFLG1CQUFBO0FDQUY7O0FERUE7RUFDRSxTQUFBO0VBQ0Esb0NBQUE7RUFDQSxtQ0FBQTtFQUNBLHVCQUFBO0VBQ0Esc0JBQUE7QUNDRiIsImZpbGUiOiJtYWluLmNzcyJ9 */
+section {
+  width: 100%;
+  max-width: 900px;
+  border-left: 1px solid rgba(128, 128, 128, 0.5);
+  border-right: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 5px solid #5CE0EA;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+section h2 {
+  padding-left: 2rem;
+  text-transform: uppercase;
+}
+section p {
+  padding-left: 2rem;
+}
+section ul {
+  padding-left: 3rem;
+}
+section ul a {
+  color: hsl(184.2253521127, 77.1739130435%, 63.9215686275%);
+  transition: ease-in-out 0.2s;
+}
+section ul a:hover {
+  color: hsl(0, 0%, 50.1960784314%);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

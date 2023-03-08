@@ -12,7 +12,6 @@ html, body {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font: $font;
 }
 
 section {
@@ -23,6 +22,21 @@ section {
   border-top: 5px solid $lightblue;
   border-bottom: 1px solid $translusentgrey;
   h2{
-    color: $primary;
+    padding-left: 2rem;
+    text-transform: uppercase;
+  }
+  p{
+    padding-left: 2rem;
+  }
+  ul{
+    padding-left: 3rem;
+    a{
+      color: hslac($lightblue, 1);
+      transition: ease-in-out .2s;
+    }
+    a:hover{
+      color: hslac($grey, 1);
+      text-decoration: none;
+    }
   }
 }
