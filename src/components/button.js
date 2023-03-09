@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 export function Button() {
     return(
         <nav className="category-nav">
-            <button className="category-nav-button"><Link to="/">React</Link></button>
-            <button className="category-nav-button"><Link to="/css">CSS</Link></button>
-            <button className="category-nav-button"><Link to="/javascript">Javascript</Link></button>
-            <button className="category-nav-button"><Link to="/headless-cms">Headless CMS</Link></button>
-            <button className="category-nav-button"><Link to="/html">HTML</Link></button>
+            <Link className="category-nav-button" to="/">React</Link>
+            <Link className="category-nav-button" to="/css">CSS</Link>
+            <Link className="category-nav-button" to="/javascript">Javascript</Link>
+            <Link className="category-nav-button" to="/headless-cms">Headless CMS</Link>
+            <Link className="category-nav-button" to="/html">HTML</Link>
         </nav>
     )
 }
