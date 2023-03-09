@@ -55,21 +55,39 @@ html, body {
 }
 
 .category-nav {
-  gap: 1rem;
+  margin: 2em 0 0 0;
   @include flex-left();
+  &-list {
+    margin: 0; padding: 0;
+    gap: 1em;
+    list-style-type: none;
+    @include flex-left();
+    &-item {
+      @include flex-col-left-ns();
+    }
+  }
   &-button {
+    max-width: 100%;
+    max-height: $heading;
+    line-height: 2em;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: .6em 1.4em 2.4em 1.4em;
     font-family: $font;
     text-transform: uppercase;
     font-size: $paragraph;
     color: hslac($grey, 1);
     background-color: hslac($lightgrey, 1);
-    padding: 1em;
     border-radius: 0;
     border-left: 1px solid hslac($grey, .5);
     border-right: 1px solid hslac($grey, .5);
     border-top: 1px solid hslac($grey, .5);
     border-bottom: 1px solid hslac($lightblue, 1);
-    margin-top: 2rem;
     text-decoration: none;
     &.active {
       color: white;
